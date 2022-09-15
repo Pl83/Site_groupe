@@ -4,8 +4,7 @@
     box-sizing: border-box;
 }
 header{
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
     margin-bottom:5%
 }
 section{
@@ -29,15 +28,26 @@ div{
     
 }
 img{
-    border-radius: 100px;
+    border-radius: 100%;
+    width: 400px;
+    height: 400px;
 }
-.contener
+.contener1
 {
-    padding-top: 4%;
-    border-radius: 100% ;
-    background-color: lightblue;
-    width:25%;
-    border: solid black;
+    padding: 1%;
+    border-radius: 75px ;
+    background-color: rgb(197, 98, 230);
+    border: solid rgb(217, 68, 217) 10px;
+    width: 50%;
+}
+
+.contener3
+{
+    padding: 1%;
+    border-radius: 75px ;
+    background-color: rgb(165, 164, 163);
+    border: solid rgb(0, 0, 0) 5px;
+    width: 50%;
 }
 .contener h2{
     padding-bottom: 5%;
@@ -45,6 +55,27 @@ img{
 
 .title{
     font-size:50px;
+}
+/* Catégorie Passion*/
+.contener2
+{
+    padding: 1%;
+    border-radius: 75px ;
+    background-color: rgb(255, 181, 141);
+    border: solid rgb(255, 71, 71) 10px;
+    width: 50%;
+}
+.Passion{
+    width: auto;
+    display: flex;
+}
+.Passion img{
+    width: 175px;
+    height: 175px;
+
+}
+.Block{
+    display: block;
 }
 /* Tabs */
 ul{
@@ -54,6 +85,7 @@ ul{
     padding: 0;
     text-align: center;
     justify-content: center;
+    width:auto;
   }
   .tab{
     padding: 8px 16px;
@@ -82,3 +114,46 @@ ul{
   .active{
     display: block;
   }
+
+  @media only screen and (max-width:  1280px){
+img{
+    width: 250px;
+    height: 250px;
+}
+.contener1{
+    width: 50%;
+}
+
+  }
+
+  @media only screen and (max-width:  800px){
+    img{
+        width: 200px;
+        height: 200px;
+    }
+    .contener1{
+        width: 50%;
+    }
+    
+      }
+
+
+      @media only screen and (max-width:  500px){
+        img{
+            width: 125px;
+            height: 125px;
+        }
+        .flex{
+            gap:10%;
+        }
+        .contener1{
+            width: 50%;
+            padding:5%;
+            font-size: 75%;
+        }
+        .tab{
+            font-size: 100%;
+
+        }
+        
+          }
