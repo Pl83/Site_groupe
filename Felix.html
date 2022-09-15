@@ -14,19 +14,89 @@
         <p></p>
     </header>
     <main>
-        <section>
+        <div>
+        <ul>
+            <li class="tab tab-presentation tab-active">Présentation</li>
+            <li class="tab tab-passion">Passion</li>
+            <li class="tab tab-projet">Projet</li>
+            <li class="tab tab-caractere">Caractère</li>
+
+        </ul>
+    </div>
+        <section class="content presentation active">
             <h2>Présentation</h2>
         </section>
-        <section>
+        <section class="content passion">
             <h2>passion</h2>
         </section>
-        <section>
+        <section class="content projet">
             <h2>Projet</h2>
         </section>
-        <section>
+        <section class="content caractere">
             <h2>Caractère</h2>
         </section>
 
     </main>
 </body>
+
+<script>
+    let touslesLi = document.querySelectorAll('.tab')
+    var incrementation=1
+    console.log(touslesLi)
+
+    touslesLi.forEach(
+        function(elementseul){
+            console.log(incrementation)
+            console.log(elementseul)
+            incrementation++
+            elementseul.addEventListener(
+                "click",
+                function(){
+                    console.log(this)
+                    touslesLi.forEach(
+                        function(retiretoi){
+                    retiretoi.classList.remove('tab-active')
+                }
+                    )
+                    this.classList.add('tab-active')
+                }
+            )
+        }
+    )
+    let Presentation = document.querySelector('.presentation')
+    let Passion = document.querySelector('.passion')
+    let Projet = document.querySelector('.projet')
+    let Caractere = document.querySelector('.caractere')
+    let tousLesDiv = document.querySelectorAll('.content')
+    console.log(tousLesDiv)
+    touslesLi.forEach(
+        function(elementseul){
+            console.log(tousLesDiv)
+            console.log(incrementation)
+            console.log(elementseul)
+            incrementation++
+
+            elementseul.addEventListener(
+                "click",
+                function(){
+                    console.log(this)
+                    tousLesDiv.forEach(
+                        function(retiretoi){
+                            console.log('bonjour')
+                    retiretoi.classList.remove('active')           
+                }
+            )   
+            if(this.classList.contains('tab-presentation')){
+            Presentation.classList.add('active')}
+            if(this.classList.contains('tab-passion')){
+            Passion.classList.add('active') }
+            if(this.classList.contains('tab-projet')){
+            Projet.classList.add('active')}
+            if(this.classList.contains('tab-caractere')){
+            Caractere.classList.add('active')}
+                }
+            )       
+        }
+    )
+</script>
 </html>
