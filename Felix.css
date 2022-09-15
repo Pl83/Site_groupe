@@ -10,9 +10,42 @@ header{
 }
 section{
     text-align: center;
-    padding-bottom: 2%;
+    padding-top: 2%;
+}
+img{
+    width: 35%;
+}
+div{
+    margin-top: 2%;
+}
+.flex{
+    display: flex;
+    justify-content:center;
+    gap: 20%;
 }
 
+.pres{
+    margin-top:5%;
+    
+}
+img{
+    border-radius: 100px;
+}
+.contener
+{
+    padding-top: 4%;
+    border-radius: 100% ;
+    background-color: lightblue;
+    width:25%;
+    border: solid black;
+}
+.contener h2{
+    padding-bottom: 5%;
+}
+
+.title{
+    font-size:50px;
+}
 /* Tabs */
 ul{
     display: flex;
