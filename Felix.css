@@ -1,256 +1,242 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-body{
-    background-color:rgb(255, 246, 217);
+body {
+	background-color: rgb(255, 246, 217);
 }
-header{
-    text-align: center;
-    margin-bottom:5%
+section {
+	text-align: center;
+	padding-top: 2%;
 }
-section{
-    text-align: center;
-    padding-top: 2%;
-}
-main img{
-    width: 35%;
+main img {
+	width: 35%;
 }
 
-.flexPr{
-    display: flex;
-    justify-content: space-around;
-    gap: 10%;
+main {
+	min-height: calc(100vh - 70px);
 }
 
-.pres{
-    margin-top:5%;
-    
+.flexPr {
+	display: flex;
+	justify-content: space-around;
+	gap: 10%;
 }
 
-.imagef{
-    border-radius: 5000px;
-    width:400px;
-    height:400px;
-    background-image: url(img/felix_lavieville.jpg);
-    background-size: 150%;
-    background-repeat: no-repeat;
-    background-position: center
-}
-.contener1
-{
-    margin-top: 2%;
-    padding: 2%;
-    border-radius: 75px ;
-    border: solid  2px;
-
+.pres {
+	margin-top: 5%;
 }
 
-.contener h2{
-    padding-bottom: 5%;
+.imagef {
+	border-radius: 5000px;
+	width: 400px;
+	height: 400px;
+	background-image: url(img/felix_lavieville.jpg);
+	background-size: 150%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.contener1 {
+	margin-top: 2%;
+	padding: 2%;
+	border-radius: 75px;
+	border: solid 2px;
 }
 
-.title{
-    font-size:50px;
+.contener h2 {
+	padding-bottom: 5%;
 }
-.Blockpr{
-    display: block;
-    width:50%;
 
-
+.title {
+	font-size: 50px;
+}
+.Blockpr {
+	display: block;
+	width: 50%;
 }
 /* Catégorie Passion*/
-.flexPa{
-    display: flex;
-    justify-content:center;
-    gap: 20%;
+.flexPa {
+	display: flex;
+	justify-content: center;
+	gap: 20%;
 }
-.contener2
-{
-    padding: 2%;
-    border-radius: 75px ;
+.contener2 {
+	padding: 2%;
+	border-radius: 75px;
 
-    border: solid 2px;
-    width: 50%;
-    height: 100%;
-    margin-top: 7.5%;    
+	border: solid 2px;
+	width: 50%;
+	height: 100%;
+	margin-top: 7.5%;
 }
-.contener2 p{
-    margin-bottom:2%;
+.contener2 p {
+	margin-bottom: 2%;
 }
-.Passion{
-    width: auto;
-    display: flex;
+.Passion {
+	width: auto;
+	display: flex;
 }
-.Passion img{
-    width: 175px;
-    height: 175px;
-
+.Passion img {
+	width: 175px;
+	height: 175px;
 }
 
-.Block{
-    display: block;
+.Block {
+	display: block;
 }
 /* Catégorie projet */
-.flexPro{
-    display: flex;
-    justify-content:center;
-    margin-bottom: 2%;
+.flexPro {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 2%;
 }
-.flexPro1{
-    display: flex;
-    justify-content:center;
+.flexPro1 {
+	display: flex;
+	justify-content: center;
 }
-.flexPro1 img{
-    width: 230px;
-    height: 230px;
+.flexPro1 img {
+	width: 230px;
+	height: 230px;
 }
-.flexPro1 div{
-    width:25%
+.flexPro1 div {
+	width: 25%;
 }
-.triminoc img{
-    width: 230px;
-    height: 230px;
+.triminoc img {
+	width: 230px;
+	height: 230px;
 }
-.triminoc div{
-    padding:5%;
-    padding-top: 4%;
+.triminoc div {
+	padding: 5%;
+	padding-top: 4%;
 }
 /* Tabs */
-ul{
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    justify-content: center;
-    width:auto;
+ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	justify-content: center;
+	width: auto;
 }
-.tab{
-    padding: 8px 16px;
-    font-size: 24px;
-    color: black;
-    font-family: sans-serif;
-    transition: 0.7s;
+.tab {
+	padding: 8px 16px;
+	font-size: 24px;
+	color: black;
+	font-family: sans-serif;
+	transition: 0.7s;
 }
-.tab:hover{
-    background-color: grey;
-    cursor: pointer;
+.tab:hover {
+	background-color: grey;
+	cursor: pointer;
 }
-.tab-active{
-    background-color: darkgray;
+.tab-active {
+	background-color: darkgray;
 }
-.content{
-    display: none;
-    width: 100%;
-    height: 400px;
+.content {
+	display: none;
+	width: 100%;
 }
 
 .content > p {
-    font-family: sans-serif;
-    font-size: 18px;
+	font-family: sans-serif;
+	font-size: 18px;
 }
-.active{
-    display: block;
-}
-
-@media only screen and (max-width:  1280px){
-main img{
-    width: 250px;
-    height: 250px;
-}
-.contener1{
-    padding: 4%;
-}
-.imagef{
-    border-radius: 1000px;
-    width: 350px;
-    height:350px;
+.active {
+	display: block;
 }
 
+@media only screen and (max-width: 1280px) {
+	main img {
+		width: 250px;
+		height: 250px;
+	}
+	.contener1 {
+		padding: 4%;
+	}
+	.imagef {
+		border-radius: 1000px;
+		width: 350px;
+		height: 350px;
+	}
 }
 
-@media only screen and (max-width:  800px){
-    main img{
-        width: 200px;
-        height: 200px;
-    }
-    .imagef{
-        border-radius: 1000px;
-        width: 225px;
-        height:225px;
-    }
-    .flexPr{
-        gap: 5%;
-    }
-    .flexPro1 img {
-        width: 150px;
-        height: 150px;
-    }
-    .flexPro1 div {
-        width: 40%;
-    }
-    .flexPro1 {
-        gap: 5%;
-    }
-    .flexPa{
-        gap: 5%;
-    }
-    .Passion img{
-        width: 125px;
-        height: 125px;
-    }
+@media only screen and (max-width: 800px) {
+	main img {
+		width: 200px;
+		height: 200px;
+	}
+	.imagef {
+		border-radius: 1000px;
+		width: 225px;
+		height: 225px;
+	}
+	.flexPr {
+		gap: 5%;
+	}
+	.flexPro1 img {
+		width: 150px;
+		height: 150px;
+	}
+	.flexPro1 div {
+		width: 40%;
+	}
+	.flexPro1 {
+		gap: 5%;
+	}
+	.flexPa {
+		gap: 5%;
+	}
+	.Passion img {
+		width: 125px;
+		height: 125px;
+	}
+}
 
-    
-    }
+@media only screen and (max-width: 500px) {
+	main img {
+		width: 125px;
+		height: 125px;
+	}
+	.imagef {
+		border-radius: 500px;
+		width: 125px;
+		height: 125px;
+	}
+	.flexPr {
+		gap: 5%;
+		font-size: 75%;
+	}
+	.contener1 {
+		padding: 10%;
+	}
+	.flexPro1 img {
+		width: 150px;
+		height: 150px;
+	}
+	.flexPro1 div {
+		width: 40%;
+	}
+	.flexPro1 {
+		gap: 5%;
+	}
+	.flexPa {
+		gap: 5%;
+	}
+	.contener2 {
+		padding: 6%;
+	}
+	.Passion img {
+		width: 62.5px;
+		height: 62.5px;
+	}
+	.triminoc img {
+		height: 125%;
+		width: 125px;
+	}
 
-
-    @media only screen and (max-width:  500px){
-        main img{
-            width: 125px;
-            height: 125px;
-        }
-        .imagef{
-            border-radius: 500px;
-            width: 125px;
-            height: 125px;
-        }
-        .flexPr{
-            gap: 5%;
-            font-size: 75%;
-        }
-        .contener1{
-            padding:10%;
-        }
-        .flexPro1 img {
-            width: 150px;
-            height: 150px;
-        }
-        .flexPro1 div {
-            width: 40%;
-        }
-        .flexPro1 {
-            gap: 5%;
-        }
-        .flexPa{
-            gap: 5%;
-        }
-        .contener2{
-            padding:6%;
-        }
-        .Passion img{
-            width: 62.5px;
-            height: 62.5px;
-        }
-        .triminoc img{
-            height: 125%;
-            width: 125px;
-        }
-    
-        .tab{
-            font-size: 100%;
-
-        }
-        
-        }
+	.tab {
+		font-size: 100%;
+	}
+}
