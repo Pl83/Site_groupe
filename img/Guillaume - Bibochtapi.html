@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://127.0.0.1:5500/Guillaume.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./Guillaume - Bibochtapi_files/nav.css">
+		<link rel="stylesheet" href="./Guillaume - Bibochtapi_files/guillaume.css">
+		<title>Guillaume - Bibochtapi</title>
+	</head>
+	<body style="">
+		<header>
+			<h2 id="navtitle">BIPOCHTAPI</h2>
+			<div>
+				<img src="./Guillaume - Bibochtapi_files/burger.webp" alt="burger" id="burger">
+				<nav style="display: flex;">
+					<a href="http://127.0.0.1:5500/Ethan.html">Ethan</a><a href="http://127.0.0.1:5500/Felix.html">Félix</a><a href="http://127.0.0.1:5500/Guillaume.html">Guillaume</a><a href="http://127.0.0.1:5500/Pierre_louis.html">Pierre Louis</a>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<div class="flex">
+				<img src="./Guillaume - Bibochtapi_files/guillaume_logo.png" alt="Guillaume Logo" class="logo">
+				<div class="p">
+					<h3>Bienvenue chez Guillaume !</h3>
+					<p>
+						Découvrez un homme incroyable du doux nom de Guillaume, qui illumine
+						de sa simple présence la journée et la vie de tous ceux qui le
+						croisent. Sa fougue et sa verve sont au diapason de son immense
+						beauté. (En réalité je suis menaçé de mort, sauvez moi vite 🥲)
+					</p>
+				</div>
+			</div>
+
+			<div class="flex">
+				<div class="p">
+					<h3>À Propos de lui</h3>
+					<p>
+						Guillaume aime la batterie, un instrument noble et parmis les plus
+						relous à installer et entretenir. Il apprécie également les jeux
+						vidéos ainsi que l'audiovisuel. La plupart des projets qu'il réalise
+						illustrent cette passion.
+					</p>
+				</div>
+				<img src="./Guillaume - Bibochtapi_files/audiovisuel.jpg" alt="Guillaume Logo" class="audiovisuel">
+			</div>
+		</main>
+		<footer></footer>
+		<script src="./Guillaume - Bibochtapi_files/nav.js"></script>
+	<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
