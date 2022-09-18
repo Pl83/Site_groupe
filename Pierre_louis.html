@@ -1,317 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="footer.css">   
-    <style>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="stylesheet" href="footer.css" />
+		<style>
+			* {
+				border: 0;
+				margin: 0;
+				padding: 0;
+			}
+			.text {
+				align-items: center;
+				font-size: 50px;
+				height: 70%;
+				width: 40%;
+				font-family: "Space Grotesk", sans-serif;
+				color: white;
+				text-align: start;
+			}
 
-        *{
-            border:0;
-            margin: 0;
-            padding: 0;;
-        }
-        .text{
-            align-items: center;
-            font-size: 50px;
-            height: 70%;
-            width: 40%;
-            font-family: 'Space Grotesk', sans-serif;
-            color: white;
-            text-align: start;
-        }
-        
-        header {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-                Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-            color: rgb(223, 223, 223);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-color: rgb(0, 0, 0);
-            padding: 0 20px;
-            height: 70px;
-            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.327);
-            position: relative;
-            z-index: 20;
-        }
-        
-        header h2 {
-            transition: 2s;
-            font-family: 'Space Grotesk', sans-serif;
-        }
-        
-        header h2:hover {
-            font-size: 30px;
-            
-        }
-        
-        header nav {
-            padding: 0;
-            margin: 0;
-        }
-        
-        header nav a {
-            padding: 10px 20px;
-            color: rgb(223, 223, 223);
-            text-decoration: none;
-            border-radius: 10px;
-        }
-        header nav a:hover {
-            background-color: rgba(245, 245, 220, 0.077);
-        }
-        
-        
-        
-        
-        .espace1{
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            background-color: black;
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-        
-        .image1{
-            display: block;
-            width: 20%;
-            transition: 2s;
-        }
-        
-        .image1:hover{
-            transition: 2s;
-            display: flex;
-            width: 30%;
-            justify-content: space-between;
-        }
-        
-        h2{
-            text-align: center;
-        }
-        
-        
-        .espace2{
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            padding-top: 20px;
-            background-image: url(https://www.bhmpics.com/walls/pink_moon_fantasy_art-wide.jpg);
-            background-position: left;
-            background-size: cover;
-            transition: 2s;
-        }
-        
-        
-        .espace2:hover{
-            display: flex;
-            justify-content: space-around;
-            transition: 2s;
-        }
-        
-        hr {
-            border-top: 3px double  white;
-        }
-        
-        
-        .espace3{
-            display: flex;
-            justify-content: space-around;
-            text-align: center;
-            background-color: black;
-            padding: 10px;
-        
-        }
-        
-        .container img{
-            width: 30%;
-            transition: 2;
-        }
-        
-        .image3{
-            display: flex;
-            justify-content:center ;
-        }
-        
-        @media only screen and (max-width:  1280px) {
-            .espace1{
-           display: flex;
-           justify-content: space-evenly;
-            }
-            .image1 img
-            {
-            display: block;
-            width: 100%;
-            transition: 2s;
-        }
-        .image1
-            {
-            display: block;
-            width: 50%;
-            transition: 2s;
-        }
-        .text{
-                font-size:100%;
-            }
-            .image2 img{
-                width: 50%;
-            }
-            .espace2{
-                display: flex;
-           justify-content: space-around;
-            }
-        }
-        @media only screen and (max-width:  800px) {
-        
-            .espace1{
-           display: flex;
-           justify-content: center;
-            }
-            .image1
-            {
-            display: block;
-            width: 10%;
-            transition: 2s;}
-            .image1{
-                width: 50%;
-            }
-            .image2 {
-                width: 50%;
-            }
-            .image2 img{
-                width: 100%;
-            }
-        
-            
-        
-        
-            .espace2{
-                display: flex;
-           justify-content: space-between;
-            }
-        
-            .text{
-            align-items: center;
-            font-size: 20px;
-            font-family: 'Space Grotesk', sans-serif;
-            color: white;
-            text-align: center;
-                padding: 10px;
-            }
-            .container img{
-                width: 40%;
-            }
-        }
-        
-        </style>
-    
-</head>
-<body>
-    <header>
-        <h2 id="navtitle">BIPOCHTAPI</h2>
-        <nav>
-            <a href="Ethan.html">Ethan</a><a href="Felix.html">Félix</a>
-            <a href="Guillaume.html">Guillaume</a>
-            <a href="Pierre_louis.html">Pierre Louis</a>
-        </nav>
-    </header>
-    
-    <main>
+			header {
+				font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+					Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+					sans-serif;
+				color: rgb(223, 223, 223);
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				background-color: rgb(0, 0, 0);
+				padding: 0 20px;
+				height: 70px;
+				box-shadow: 0 5px 5px rgba(0, 0, 0, 0.327);
+				position: relative;
+				z-index: 20;
+			}
 
-        <div class="espace1"> 
+			header h2 {
+				transition: 2s;
+				font-family: "Space Grotesk", sans-serif;
+			}
 
-            <div class="image1">
-                <img class="profil" src="img/imgPL.png" alt="">
-            </div>
+			header h2:hover {
+				font-size: 30px;
+			}
 
-            
-            <div class="text">
-            <h2 >Pierre louis</h2>
-            <hr>
-            <p>Qui je suis</p>
-            <p>je suis réveur et inventif </p>
+			header nav {
+				padding: 0;
+				margin: 0;
+			}
 
-            </div>
-        </div>
+			header nav a {
+				padding: 10px 20px;
+				color: rgb(223, 223, 223);
+				text-decoration: none;
+				border-radius: 10px;
+			}
+			header nav a:hover {
+				background-color: rgba(245, 245, 220, 0.077);
+			}
 
+			.espace1 {
+				display: flex;
+				align-items: center;
+				justify-content: space-around;
+				background-color: black;
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
 
+			.image1 {
+				display: block;
+				width: 20%;
+				transition: 2s;
+			}
 
-        <div class="espace2">
+			.image1:hover {
+				transition: 2s;
+				display: flex;
+				width: 30%;
+				justify-content: space-between;
+			}
 
-            <div class="text">
-            
-                <h2 >Mes pation</h2>
-                <hr>
-                <p>Mes principal pation son les jeux vidéo les livre.</p>
-                <p>j'aime aussi bricolai des lego, marcher dans la nature, nager.</p>
-                <p>j'aime la couleur rouge, bleu et les melanger a du violet.</p>
+			h2 {
+				text-align: center;
+			}
 
-            </div>
-        
-            <div class="image2">
-                <img src="img/quality-of-life.png">
-            </div>
+			.espace2 {
+				display: flex;
+				align-items: center;
+				justify-content: space-evenly;
+				padding-top: 20px;
+				background-image: url(https://www.bhmpics.com/walls/pink_moon_fantasy_art-wide.jpg);
+				background-position: left;
+				background-size: cover;
+				transition: 2s;
+			}
 
-        </div>
+			.espace2:hover {
+				display: flex;
+				justify-content: space-around;
+				transition: 2s;
+			}
 
-<div class="espace3">
+			hr {
+				border-top: 3px double white;
+			}
 
-    <div class="text">   
-        <h2 >mon projet</h2>
-    </div>
-    <div class="container">
+			.espace3 {
+				display: flex;
+				justify-content: space-around;
+				text-align: center;
+				background-color: black;
+				padding: 10px;
+			}
 
-        <div class="image3">
-            <img src="img/page1.png" alt="">
-            <img src="img/page2.png" alt="">
-        </div>
+			.container img {
+				width: 30%;
+				transition: 2;
+			}
 
-        <div>
-            <img  src="img/page3.png" alt="">
-        </div>
+			.image3 {
+				display: flex;
+				justify-content: center;
+			}
 
-    </div></div>
+			@media only screen and (max-width: 1280px) {
+				.espace1 {
+					display: flex;
+					justify-content: space-evenly;
+				}
+				.image1 img {
+					display: block;
+					width: 100%;
+					transition: 2s;
+				}
+				.image1 {
+					display: block;
+					width: 50%;
+					transition: 2s;
+				}
+				.text {
+					font-size: 100%;
+				}
+				.image2 img {
+					width: 50%;
+				}
+				.espace2 {
+					display: flex;
+					justify-content: space-around;
+				}
+			}
+			@media only screen and (max-width: 800px) {
+				.espace1 {
+					display: flex;
+					justify-content: center;
+				}
+				.image1 {
+					display: block;
+					width: 10%;
+					transition: 2s;
+				}
+				.image1 {
+					width: 50%;
+				}
+				.image2 {
+					width: 50%;
+				}
+				.image2 img {
+					width: 100%;
+				}
 
-    </main>
+				.espace2 {
+					display: flex;
+					justify-content: space-between;
+				}
 
-    <footer>
-        <br />
-        <p>Retrouvez nos réseaux :</p>
-        <br />
-        <p class="eraz">
-            Félix
-            <a href="https://www.linkedin.com/in/felix-lavieville/">Linkedin</a> et
-            <a href="https://github.com/TuberculeP">Github</a>
-        </p>
-        <p class="eraz">
-            Ethan
-            <a href="https://www.linkedin.com/in/ethan-delcroix-087305233/"
-                >Linkedin</a
-            >
-            et <a href="https://github.com/Nalithdev">Github</a>
-        </p>
-        <p class="eraz">
-            Guillaume
-            <a href="https://www.linkedin.com/in/guillaume-gonidou-21223a233/"
-                >Linkedin</a
-            >
-            et <a href="https://github.com/DalSchim">Github</a>
-        </p>
-        <p class="eraz">
-            Pierre-louis
-            <a href="https://www.linkedin.com/in/pierre-louis-sans-7756b0223/"
-                >Linkedin</a
-            >
-            et <a href="https://github.com/Pl83">Github</a>
-        </p>
-        <br />
-    </footer>
+				.text {
+					align-items: center;
+					font-size: 20px;
+					font-family: "Space Grotesk", sans-serif;
+					color: white;
+					text-align: center;
+					padding: 10px;
+				}
+				.container img {
+					width: 40%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h2 id="navtitle">BIPOCHTAPI</h2>
+			<nav>
+				<a href="Ethan.html">Ethan</a><a href="Felix.html">Félix</a>
+				<a href="Guillaume.html">Guillaume</a>
+				<a href="Pierre_louis.html">Pierre Louis</a>
+			</nav>
+		</header>
 
+		<main>
+			<div class="espace1">
+				<div class="image1">
+					<img class="profil" src="img/imgPL.png" alt="" />
+				</div>
 
+				<div class="text">
+					<h2>Pierre louis</h2>
+					<hr />
+					<p>Qui suis-je</p>
+					<p>je suis réveur et inventif</p>
+				</div>
+			</div>
 
+			<div class="espace2">
+				<div class="text">
+					<h2>Mes passions</h2>
+					<hr />
+					<p>Mes principal passions sont les jeux vidéos et les livres.</p>
+					<p>j'aime aussi bricoler des Lego, marcher dans la nature, nager.</p>
+					<p>j'aime la couleur rouge, bleu et le violet</p>
+				</div>
 
-</body>
+				<div class="image2">
+					<img src="img/quality-of-life.png" />
+				</div>
+			</div>
+
+			<div class="espace3">
+				<div class="text">
+					<h2>mon projet</h2>
+				</div>
+				<div class="container">
+					<div class="image3">
+						<img src="img/page1.png" alt="" />
+						<img src="img/page2.png" alt="" />
+					</div>
+
+					<div>
+						<img src="img/page3.png" alt="" />
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<br />
+			<p>Retrouvez nos réseaux :</p>
+			<br />
+			<p class="eraz">
+				Félix
+				<a href="https://www.linkedin.com/in/felix-lavieville/">Linkedin</a> et
+				<a href="https://github.com/TuberculeP">Github</a>
+			</p>
+			<p class="eraz">
+				Ethan
+				<a href="https://www.linkedin.com/in/ethan-delcroix-087305233/"
+					>Linkedin</a
+				>
+				et <a href="https://github.com/Nalithdev">Github</a>
+			</p>
+			<p class="eraz">
+				Guillaume
+				<a href="https://www.linkedin.com/in/guillaume-gonidou-21223a233/"
+					>Linkedin</a
+				>
+				et <a href="https://github.com/DalSchim">Github</a>
+			</p>
+			<p class="eraz">
+				Pierre-louis
+				<a href="https://www.linkedin.com/in/pierre-louis-sans-7756b0223/"
+					>Linkedin</a
+				>
+				et <a href="https://github.com/Pl83">Github</a>
+			</p>
+			<br />
+		</footer>
+	</body>
 </html>
