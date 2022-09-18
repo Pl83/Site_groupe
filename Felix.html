@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="nav.css" />
+		<link rel="stylesheet" href="Felix.css" />
+		<link rel="stylesheet" href="footer.css" />
+
+		<title>Félix - Bipochtapi</title>
+	</head>
+	<body>
+		<header>
+			<div>
+				<h2 id="navtitle">BIPOCHTAPI</h2>
+				<img src="img/burger.webp" alt="burger" id="burger" />
+				<nav>
+					<a href="Ethan.html">Ethan</a><a href="Felix.html">Félix</a
+					><a href="Guillaume.html">Guillaume</a
+					><a href="Pierre_louis.html">Pierre Louis</a>
+				</nav>
+			</div>
+			<nav class="burger">
+				<a href="Ethan.html">Ethan</a>
+				<a href="Felix.html">Félix</a>
+				<a href="Guillaume.html">Guillaume</a>
+				<a href="Pierre_louis.html">Pierre Louis</a>
+			</nav>
+		</header>
+		<main>
+			<div>
+				<ul>
+					<li class="tab tab-presentation tab-active">Présentation</li>
+					<li class="tab tab-passion">Passions</li>
+					<li class="tab tab-projet">Projet</li>
+				</ul>
+			</div>
+			<section class="content presentation active">
+				<h2 class="title">Présentation</h2>
+				<div class="flexPr">
+					<div class="imagef"></div>
+
+					<div class="Blockpr">
+						<div class="contener1">
+							<h2>Félix Laviéville</h2>
+
+							<p class="pres">
+								Étudiant de 19 ans en deuxième année dans l'école IIM dans l'axe
+								Coding & Digital innovation (plus simple développement web)
+								Développeur en pleine croissance capable de créer des sites web
+								tous différent et tous plus fous les uns que les autres, un
+								homme droit qui vit sa vie au jour le jour sans avoir peur de se
+								montrer.
+							</p>
+						</div>
+						<div class="contener1">
+							<p>
+								Félix est une personne joyeuse en toutes circonstances, toujours
+								prêt à rire avec ceux qui l'entourent pour créer une atmosphère
+								calme et détendue.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="content passion">
+				<h2 class="title">Passion</h2>
+				<div class="flexPa">
+					<div class="contener2">
+						<p>
+							Les passions de Félix sont très originales : il aime manger comme
+							toute personne mais il y prend beaucoup de plaisir.
+						</p>
+						<p>
+							Il aime aussi dormir pour pouvoir avoir son énergie quotidienne
+							pour faire des blagues très marrantes et passionnantes.
+						</p>
+						<p>
+							Il est aussi passionné de code en créant des dizaines de sites web
+							tous plus fous les uns que les autres.
+						</p>
+					</div>
+					<div class="Block">
+						<div class="Passion">
+							<img src="img/emogi_dodo.png" alt="dodo" />
+							<img src="img/emogi_eat.png" alt="eat" />
+						</div>
+						<div class="Passion">
+							<img src="img/emogi_laugh.jpg" alt="laugh" />
+							<img src="img/emogi_code.png" alt="eat" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="content projet">
+				<h2 class="title">Projet</h2>
+				<div class="flexPro1">
+					<div>
+						<p>
+							Durant son année de Terminal Félix a réalisé différent projet mais
+							celui le plus marquant est un projet sur les triminos
+						</p>
+					</div>
+					<img src="img/Triminos.png" alt="début" />
+				</div>
+				<div class="flexPro triminoc">
+					<div>
+						<p>
+							Qu'il a du réalisé en python avec le module Turtle, ce projet
+							consistait à remplir un carré de 2**n cotés à l'aide de triminos
+						</p>
+					</div>
+					<img src="img/Triminos_10.png" alt="remplisage" />
+					<div>
+						<p>
+							tout d'abord le projet plaçais un petit carré dans un grand carré
+							vide qu'il remplit ensuite de triminos jusqu'a ce qu'il soit plein
+						</p>
+					</div>
+				</div>
+				<p>Et Voici le carré complètement complèter</p>
+				<img src="img/Triminos_10F.png" alt="fini" />
+			</section>
+		</main>
+		<footer>
+			<br />
+			<p>Retrouvez nos réseaux :</p>
+			<br />
+			<p class="eraz">
+				Félix
+				<a href="https://www.linkedin.com/in/felix-lavieville/">Linkedin</a> et
+				<a href="https://github.com/TuberculeP">Github</a>
+			</p>
+			<p class="eraz">
+				Ethan
+				<a href="https://www.linkedin.com/in/ethan-delcroix-087305233/"
+					>Linkedin</a
+				>
+				et <a href="https://github.com/Nalithdev">Github</a>
+			</p>
+			<p class="eraz">
+				Guillaume
+				<a href="https://www.linkedin.com/in/guillaume-gonidou-21223a233/"
+					>Linkedin</a
+				>
+				et <a href="https://github.com/DalSchim">Github</a>
+			</p>
+			<p class="eraz">
+				Pierre-louis
+				<a href="https://www.linkedin.com/in/pierre-louis-sans-7756b0223/"
+					>Linkedin</a
+				>
+				et <a href="https://github.com/Pl83">Github</a>
+			</p>
+			<br />
+		</footer>
+
+		<script>
+			let touslesLi = document.querySelectorAll(".tab");
+			var incrementation = 1;
+			console.log(touslesLi);
+
+			touslesLi.forEach(function (elementseul) {
+				console.log(incrementation);
+				console.log(elementseul);
+				incrementation++;
+				elementseul.addEventListener("click", function () {
+					console.log(this);
+					touslesLi.forEach(function (retiretoi) {
+						retiretoi.classList.remove("tab-active");
+					});
+					this.classList.add("tab-active");
+				});
+			});
+			let Presentation = document.querySelector(".presentation");
+			let Passion = document.querySelector(".passion");
+			let Projet = document.querySelector(".projet");
+
+			let tousLesDiv = document.querySelectorAll(".content");
+			console.log(tousLesDiv);
+			touslesLi.forEach(function (elementseul) {
+				console.log(tousLesDiv);
+				console.log(incrementation);
+				console.log(elementseul);
+				incrementation++;
+
+				elementseul.addEventListener("click", function () {
+					console.log(this);
+					tousLesDiv.forEach(function (retiretoi) {
+						console.log("bonjour");
+						retiretoi.classList.remove("active");
+					});
+					if (this.classList.contains("tab-presentation")) {
+						Presentation.classList.add("active");
+					}
+					if (this.classList.contains("tab-passion")) {
+						Passion.classList.add("active");
+					}
+					if (this.classList.contains("tab-projet")) {
+						Projet.classList.add("active");
+					}
+				});
+			});
+		</script>
+		<script src="nav.js"></script>
+	</body>
+</html>
