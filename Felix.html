@@ -4,18 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Felix.css">
     <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="Felix.css">
+    
     <title>Felix</title>
 </head>
 <body>
     <header>
-        <h2 id="navtitle">BIPOCHTAPI</h2>
-			<nav>
-				<a href="Ethan.html">Ethan</a><a href="Felix.html">Félix</a
-				><a href="Guillaume.html">Guillaume</a
-				><a href="Pierre_louis.html">Pierre Louis</a>
-			</nav>
+        <div>
+            <h2 id="navtitle">BIPOCHTAPI</h2>
+            <img src="img/burger.webp" alt="burger" id="burger" />
+            <nav>
+                <a href="Ethan.html">Ethan</a><a href="Felix.html">Félix</a
+                ><a href="Guillaume.html">Guillaume</a
+                ><a href="Pierre_louis.html">Pierre Louis</a>
+            </nav>
+        </div>
+        <nav class="burger">
+            <a href="Ethan.html">Ethan</a>
+            <a href="Felix.html">Félix</a>
+            <a href="Guillaume.html">Guillaume</a>
+            <a href="Pierre_louis.html">Pierre Louis</a>
+        </nav>
     </header>
     <main>
         <div>
@@ -87,7 +97,6 @@
 
 
     </main>
-</body>
 
 <script>
     let touslesLi = document.querySelectorAll('.tab')
@@ -148,4 +157,7 @@
         }
     )
 </script>
+<script src="nav.js"></script>
+</body>
+
 </html>
