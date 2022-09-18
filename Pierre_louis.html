@@ -39,8 +39,6 @@
 
         <div class="espace2">
 
-            
-
             <div class="text">
             
                 <h2 >Mes pation</h2>
@@ -51,36 +49,29 @@
 
             </div>
         
-
             <div class="image2">
-                <img src="img/quality-of-life.png" alt="">
+                <img src="img/quality-of-life.png">
             </div>
 
         </div>
 
-        <div class="espace3">
+<div class="espace3">
 
     <div class="text">   
-        <h2 >Mes pation</h2>
+        <h2 >mon projet</h2>
     </div>
-            
-        <div class="container">
+    <div class="container">
 
-
-
-            <div class="image3">
-                <img src="img/page1.png" alt="">
-                <img src="img/page2.png" alt="">
-            </div>
-
-
-            <div>
-                <img class="imagep3" src="img/page3.png" alt="">
-            </div>
-
-
+        <div class="image3">
+            <img src="img/page1.png" alt="">
+            <img src="img/page2.png" alt="">
         </div>
-        
+
+        <div>
+            <img  src="img/page3.png" alt="">
+        </div>
+
+    </div></div>
 
     </main>
 
@@ -107,13 +98,6 @@
     color: white;
     text-align: start;
 }
-
-
-
-
-
-
-
 
 header {
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -154,6 +138,10 @@ header nav a {
 header nav a:hover {
 	background-color: rgba(245, 245, 220, 0.077);
 }
+
+
+
+
 .espace1{
     display: flex;
     align-items: center;
@@ -184,19 +172,20 @@ h2{
 .espace2{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding-top: 20px;
     background-image: url(https://www.bhmpics.com/walls/pink_moon_fantasy_art-wide.jpg);
     background-position: left;
     background-size: cover;
+    transition: 2s;
 }
 
 
-.image2{
-    display: block;
-    width: 20%;
+.espace2:hover{
+    display: flex;
+    justify-content: space-around;
+    transition: 2s;
 }
-
 
 hr {
     border-top: 3px double  white;
@@ -208,17 +197,32 @@ hr {
     justify-content: space-around;
     text-align: center;
     background-color: black;
+    padding: 100px;
 
 }
 
 .container img{
     width: 30%;
+    transition: 2;
 }
 
 .image3{
     display: flex;
-    justify-content: space-evenly;
+    justify-content:center ;
 }
+
+
+@media screen and (max-width:400px) {
+
+    .espace1{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+    }
+
+
+}
+
 
 
 
