@@ -17,29 +17,33 @@
             <li class="tab tab-presentation tab-active">Présentation</li>
             <li class="tab tab-passion">Passion</li>
             <li class="tab tab-projet">Projet</li>
-            <li class="tab tab-caractere">Caractère</li>
+
 
         </ul>
     </div>
         <section class="content presentation active">
             <h2 class="title">Présentation</h2>
-            <div class="flex">
+            <div class="flexPr">
                 <div class="imagef"></div>
 
-
+                <div class="Blockpr">
             <div class="contener1">
                 <h2>Félix Laviéville</h2>
-                <p class="pres">Etudiant de 19 ans en deuxième année dans l'école IIM dans l'axe Coding & Digital Innovation (plus simple Developpement web)
-                    Developpeur en pleine croissance capable de crée des sites web tous différent et tous aussi fou les uns que les autres
-                    Un homme droit qui vit sa vie au jour le jour sans avoir la peur de se montrer </p></div>
-        </div>
+
+                <p class="pres">Étudiant de 19 ans en deuxième année dans l'école IIM dans l'axe Coding & Digital innovation 
+                    (plus simple développement web) Développeur en pleine croissance capable de créer des sites web tous different et tous 
+                    aussi fou les uns que les autres un homme droit qui vit sa vie au jour le jour sans avoir la peur de se montrer.</p>
+                </div>
+                <div class="contener1"><p>Felix est une personne joyeuse en toutes circonstances toujours prêt à rire avec ceux qui l'entourent pour créer une atmosphère calme et détendue</p></div>
+        </div></div>
+
         </section>
         <section class="content passion ">
             <h2 class="title">Passion</h2>
-            <div class="flex">
-            <div class="contener2"> <p> Les passions de Félix sont très original il aime manger comme toute personne mais il y en prend beaucoup de plaisir</p>
-                <p>Il aime aussi dormir pour pouvoir avoir son énergie quotidienne pour faire des blagues très marrante et passionnante</p>
-                <p>Il est aussi passionné de code en créant des dizaines de site web tout aussi fou les uns que les autres</p>
+            <div class="flexPa">
+            <div class="contener2"> <p> Les passions de Félix sont très originales il aime manger comme toute personne mais il y en prend beaucoup de plaisir</p>
+                <p>Il aime aussi dormir pour pouvoir avoir son énergie quotidienne pour faire des blagues très marrant et passionnant</p>
+                <p>Il est aussi passionné de code en créant des dizaines de sites web tout aussi fous les uns que les autres</p>
             </div>
             <div class="Block">
             <div class="Passion">
@@ -56,14 +60,25 @@
         </section>
         <section class="content projet">
             <h2 class="title">Projet</h2>
-            <p>Durant son année de Terminal Félix a réalisé différent projet mais celui le plus marquant est un projet sur les triminos</p>
-            <p>Qu'il a du réalisé en python avec le module Turtle, ce projet consistait à remplir un carré de 2**n cotés à l'aide de triminos </p>
-            <p>tout d'abord le projet plaçais un petit carré dans un grand carré vide qu'il remplit ensuite de triminos jusqu'a ce qu'il soit plein</p>
+            <div class="flexPro1">
+                <div>
+                    <p>Durant son année de Terminal Félix a réalisé différent projet mais celui le plus marquant est un projet sur les triminos</p>
+                </div>
+                    <img src="img/Triminos.png" alt="début">
+            </div>
+            <div class="flexPro triminoc" >
+                <div>
+                    <p>Qu'il a du réalisé en python avec le module Turtle, ce projet consistait à remplir un carré de 2**n cotés à l'aide de triminos </p>
+                </div>
+                <img src="img/Triminos_10.png" alt="remplisage">
+            <div>
+                <p>tout d'abord le projet plaçais un petit carré dans un grand carré vide qu'il remplit ensuite de triminos jusqu'a ce qu'il soit plein</p>
+            </div>
+        </div>
+        <p>Et Voici le carré complètement complèter</p>
+        <img src="img/Triminos_10F.png" alt="fini">
         </section>
-        <section class="content caractere">
-            <h2 class="title">Caractère</h2>
-            <div class="contener3"><p>Felix est une personnes joyeuse en toute circonstance toujours près à rien avec ceux qui l'entourent pour créer une atmosphère calme et détendu</p></div>
-        </section>
+
 
     </main>
 </body>
@@ -95,7 +110,7 @@
     let Presentation = document.querySelector('.presentation')
     let Passion = document.querySelector('.passion')
     let Projet = document.querySelector('.projet')
-    let Caractere = document.querySelector('.caractere')
+
     let tousLesDiv = document.querySelectorAll('.content')
     console.log(tousLesDiv)
     touslesLi.forEach(
@@ -121,8 +136,7 @@
             Passion.classList.add('active') }
             if(this.classList.contains('tab-projet')){
             Projet.classList.add('active')}
-            if(this.classList.contains('tab-caractere')){
-            Caractere.classList.add('active')}
+
                 }
             )       
         }
