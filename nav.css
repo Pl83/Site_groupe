@@ -5,28 +5,40 @@ body {
 	padding: 0;
 }
 
+#burger {
+	display: none;
+}
+
 header {
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
 		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 	color: rgb(223, 223, 223);
+	background-color: rgb(31, 29, 35);
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.327);
+	position: relative;
+	z-index: 20;
+}
+
+header div {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background-color: rgb(31, 29, 35);
 	padding: 0 20px;
-    height: 70px;
-	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.327);
-    position: relative;
-    z-index: 20;
+	height: 70px;
 }
 
 header h2 {
 	font-family: "Yeseva One";
 }
 
-header nav {
+nav {
+	display: block;
 	padding: 0;
 	margin: 0;
+}
+
+nav.burger {
+	display: none;
 }
 
 header nav a {
@@ -36,5 +48,27 @@ header nav a {
 	border-radius: 10px;
 }
 header nav a:hover {
-	background-color: rgb(223, 223, 219);
+	background-color: rgba(245, 245, 220, 0.077);
+}
+
+@media screen and (max-width: 600px) {
+	#burger {
+		display: block;
+		width: 50px;
+		transition: 0.2s;
+	}
+	#burger:hover {
+		transform: scale(1.1);
+	}
+	header > div > nav {
+		display: none;
+	}
+
+	nav.burger {
+		display: none;
+		flex-direction: column;
+		align-items: flex-end;
+		margin-right: 10px;
+		padding-bottom: 30px;
+	}
 }
