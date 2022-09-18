@@ -22,7 +22,7 @@
         <div class="espace1"> 
 
             <div class="image1">
-                <img class="profil" src="img/Sans titre-1.png" alt="">
+                <img class="profil" src="img/imgPL.png" alt="">
             </div>
 
             
@@ -197,7 +197,7 @@ hr {
     justify-content: space-around;
     text-align: center;
     background-color: black;
-    padding: 100px;
+    padding: 10px;
 
 }
 
@@ -211,29 +211,75 @@ hr {
     justify-content:center ;
 }
 
-
-@media screen and (max-width:800px) {
+@media only screen and (max-width:  1280px) {
+    .espace1{
+   display: flex;
+   justify-content: space-evenly;
+    }
+    .image1 img
+    {
+    display: block;
+    width: 100%;
+    transition: 2s;
+}
+.image1
+    {
+    display: block;
+    width: 50%;
+    transition: 2s;
+}
+.text{
+        font-size:100%;
+    }
+    .image2 img{
+        width: 50%;
+    }
+    .espace2{
+        display: flex;
+   justify-content: space-around;
+    }
+}
+@media only screen and (max-width:  800px) {
 
     .espace1{
-   display: block;
+   display: flex;
    justify-content: center;
     }
+    .image1
+    {
+    display: block;
+    width: 10%;
+    transition: 2s;}
+    .image1{
+        width: 50%;
+    }
+    .image2 {
+        width: 50%;
+    }
+    .image2 img{
+        width: 100%;
+    }
+
+    
+
 
     .espace2{
-        display: block;
-   flex-direction: column;
-   justify-content: center;
+        display: flex;
+   justify-content: space-between;
     }
 
     .text{
     align-items: center;
-    font-size: 50px;
+    font-size: 20px;
     font-family: 'Space Grotesk', sans-serif;
     color: white;
     text-align: center;
-        padding: 180px;
+        padding: 10px;
+    }
+    .container img{
+        width: 40%;
+    }
 
-}
 
 }
 
